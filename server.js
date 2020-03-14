@@ -8,10 +8,6 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", function(req, res) {
-  res.status(200).send("ok");
-});
-
 app.use("/api/users", require("./Routes/users"));
 
 // Set static folder
