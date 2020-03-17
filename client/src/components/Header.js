@@ -51,12 +51,12 @@ function Header() {
           </li>
           <li>
             <NavLink to="/portfolios">
-              <span>Portfolios</span>
+              <span>Portfolio</span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/blogs">
-              <span>Blogs</span>
+              <span>Blog</span>
             </NavLink>
           </li>
           <li>
@@ -71,7 +71,7 @@ function Header() {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://jongregis.com"
+              href="https://www.jongregis.com"
             >
               Jonathan Gregis
             </a>

@@ -43,14 +43,14 @@ const database = {
       title: "Mobile Application",
       icon: "mobile",
       details:
-        "Want to get your existing site more mobile friendly? Have a cool mobile app idea? Using React Native, I can create you a mobile app for both Android and IOS."
+        "Want your existing site more mobile friendly? Have a cool mobile app idea? Using React Native, I can create you a mobile app for both Android and IOS."
     }
   ],
   reviews: [
     {
       id: 1,
       content:
-        "I needed a website for my plumbing business and didnt know where to start. I was referred Jon by a friend and couldnt be happier with the results.",
+        "I needed a website for my plumbing business and didnt know where to start. I was introduced to Jon by a friend and couldnt be happier with the results.",
       author: {
         name: "Phil Zuck ",
         designation: "Client"
