@@ -55,23 +55,6 @@ const database = {
         name: "Phil Zuck ",
         designation: "Client"
       }
-    },
-    {
-      id: 2,
-      content:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.",
-      author: {
-        name: "Susan Yost",
-        designation: "Client"
-      }
-    },
-    {
-      id: 3,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-      author: {
-        name: "Irving Feeney",
-        designation: "Client"
-      }
     }
   ],
   skills: [
