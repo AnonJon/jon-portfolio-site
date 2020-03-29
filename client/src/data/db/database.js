@@ -59,6 +59,14 @@ const database = {
   ],
   skills: [
     {
+      title: "Python",
+      value: 80
+    },
+    {
+      title: "Django",
+      value: 70
+    },
+    {
       title: "HTML5",
       value: 95
     },
