@@ -3,15 +3,15 @@ import axios from "axios";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
 import Pagination from "../components/Pagination";
-import PortfolioReactView from "../components/react/PortfolioReactView";
+import PortfolioJavascriptView from "../components/javascript/PortfolioJavascriptView";
 
-function PortfoliosReact() {
+function PortfoliosJavascript() {
   const [portfolios, setPortfolios] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [portfoliosPerPage] = useState(9);
 
   useEffect(() => {
-    axios.get("/api/portfolioReact").then((response) => {
+    axios.get("/api/portfolioJavascript").then((response) => {
       setPortfolios(response.data);
     });
   }, [portfolios]);
@@ -32,8 +32,8 @@ function PortfoliosReact() {
     <Layout>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <Sectiontitle title="React Portfolio" />
-          <PortfolioReactView portfolios={currentPortfolios} />
+          <Sectiontitle title="Javascript Portfolio" />
+          <PortfolioJavascriptView portfolios={currentPortfolios} />
           {!(portfolios.length > portfoliosPerPage) ? null : (
             <Pagination
               className="mt-50"
@@ -49,4 +49,4 @@ function PortfoliosReact() {
   );
 }
 
-export default PortfoliosReact;
+export default PortfoliosJavascript;

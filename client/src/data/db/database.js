@@ -106,9 +106,24 @@ const database = {
       imageUrl: "/images/react-logo.svg",
       url: "/portfolios/react",
     },
-    { id: 2, title: "Javascript", imageUrl: "/images/javascript-logo.png" },
-    { id: 3, title: "Python", imageUrl: "/images/python-logo.png" },
-    { id: 4, title: "Wordpress", imageUrl: "/images/WordPress-logo.png" },
+    {
+      id: 2,
+      title: "Javascript",
+      imageUrl: "/images/javascript-logo.png",
+      url: "/portfolios/javascript",
+    },
+    {
+      id: 3,
+      title: "Python",
+      imageUrl: "/images/python-logo.png",
+      url: "/portfolios/python",
+    },
+    {
+      id: 4,
+      title: "Wordpress",
+      imageUrl: "/images/WordPress-logo.png",
+      url: "/portfolios/wordpress",
+    },
   ],
   portfolioReact: [
     {
@@ -118,6 +133,38 @@ const database = {
       imageUrl: "/images/cryptofuse2.png",
       largeImageUrl: ["/images/portfolio-image-1-lg.jpg"],
       url: "https://cryptofuse-react.herokuapp.com/",
+    },
+  ],
+  portfolioPython: [
+    {
+      id: 1,
+      title: "Billing Department Automation",
+      subtitle: "Python Automation",
+      imageUrl: "/images/github-logo.svg",
+      largeImageUrl: ["/images/github-logo.sv"],
+      url: "https://github.com/jongregis/Job-Automation",
+    },
+  ],
+  portfolioJavascript: [
+    {
+      id: 1,
+      title: "Phil's Plumbing",
+      subtitle: "Business Website for Plumbing Company.",
+      imageUrl: "/images/phils.png",
+      largeImageUrl: [
+        "/images/portfolio-image-4-lg.jpg",
+        "/images/portfolio-image-4-lg2.jpg",
+      ],
+      url: "http://www.philsplumbing.net/home.html",
+    },
+  ],
+  portfolioWordpress: [
+    {
+      id: 1,
+      title: "Remedies 4U",
+      subtitle: "CBD E-Commerce Website",
+      imageUrl: "/images/remedies.svg",
+      url: "https://remedies4u.co.uk",
     },
   ],
   portfolios: [
@@ -239,7 +286,23 @@ Mock.onGet("/api/contactinfo").reply((config) => {
   const response = database.contactInfo;
   return [200, response];
 });
+
 Mock.onGet("/api/portfolioReact").reply((config) => {
   const response = database.portfolioReact;
+  return [200, response];
+});
+
+Mock.onGet("/api/portfolioPython").reply((config) => {
+  const response = database.portfolioPython;
+  return [200, response];
+});
+
+Mock.onGet("/api/portfolioJavascript").reply((config) => {
+  const response = database.portfolioJavascript;
+  return [200, response];
+});
+
+Mock.onGet("/api/portfolioWordpress").reply((config) => {
+  const response = database.portfolioWordpress;
   return [200, response];
 });
