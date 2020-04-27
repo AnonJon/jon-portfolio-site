@@ -11,7 +11,7 @@ function Portfolios() {
   const [portfoliosPerPage] = useState(9);
 
   useEffect(() => {
-    axios.get("/api/portfolios").then(response => {
+    axios.get("/api/portfolios").then((response) => {
       setPortfoios(response.data);
     });
   }, [portfolios]);
