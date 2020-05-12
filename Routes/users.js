@@ -18,13 +18,11 @@ router.post("/userContact", (req, res) => {
     <p>${message}</p>`;
 
   const transporter = nodemailer.createTransport({
-    host: "gator3107.hostgator.com",
-    port: 465,
-    secure: true,
+    service: "gmail",
     auth: {
       user: process.env.userEmail,
-      pass: process.env.emailPassword
-    }
+      pass: process.env.emailPassword,
+    },
   });
   const mailOptions = {
     from: "contact@jongregis.com",
@@ -32,15 +30,15 @@ router.post("/userContact", (req, res) => {
     replyTo: email,
     subject: "JonGregis.com Contact Form Submission",
     text: message,
-    html: HTMLemail
+    html: HTMLemail,
   };
 
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
       return console.log(err);
     }
-    console.log("Message sent: %s", info.message);
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    // console.log("Message sent: %s", info.message);
+    // console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
   });
   res.json(req.body);
 });

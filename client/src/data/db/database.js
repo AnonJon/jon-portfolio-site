@@ -110,7 +110,6 @@ const database = {
       id: 2,
       title: "Javascript",
       imageUrl: "/images/javascript-logo.png",
-      url: "/portfolios/javascript",
     },
     {
       id: 3,

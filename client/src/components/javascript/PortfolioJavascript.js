@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as Icon from "react-feather";
 import FsLightbox from "fslightbox-react";
+import { Link } from "react-router-dom";
 
 function PortfolioJavascript(props) {
   const [toggler, setToggler] = useState(false);
@@ -28,7 +29,7 @@ function PortfolioJavascript(props) {
           )}
           {url ? (
             <li>
-              <a rel="noopener noreferrer" target="_blank" href={url}>
+              <a rel="noopener noreferrer" target="_blank" href="">
                 <Icon.Link />
               </a>
             </li>
