@@ -5,7 +5,7 @@ const database = {
     name: "Jon Gregis",
     aboutContent:
       "A full-stack engineer based in Austin TX. I have a passion for creativity and love jumping into a new technology.",
-    age: 30,
+    age: 31,
     phone: "",
     nationality: "American",
     language: "English",
@@ -28,14 +28,14 @@ const database = {
   },
   services: [
     {
-      title: "Web Design",
-      icon: "color-pallet",
+      title: "Software Automation",
+      icon: "code",
       details:
-        "Cant figure out how you want your website to look? Let me help you design everything from the layout to cool features..",
+        "Want to streamline how your company operates? Let me help design custom automation software for your business today.",
     },
     {
       title: "Web Development",
-      icon: "code",
+      icon: "color-pallet",
       details:
         "If you need anything from a landing page to a full stack site, I can help in building your next project.",
     },
@@ -67,36 +67,36 @@ const database = {
       value: 70,
     },
     {
-      title: "HTML5",
-      value: 95,
-    },
-    {
-      title: "CSS3",
-      value: 95,
+      title: "Golang",
+      value: 50,
     },
     {
       title: "Javascript",
       value: 80,
     },
     {
-      title: "jQuery",
-      value: 70,
-    },
-    {
-      title: "ReactJS",
+      title: "React",
       value: 80,
     },
     {
-      title: "React Native",
-      value: 40,
+      title: "AWS",
+      value: 70,
+    },
+    {
+      title: "C#/.NET",
+      value: 10,
+    },
+    {
+      title: "API Development",
+      value: 80,
     },
     {
       title: "Java",
       value: 35,
     },
     {
-      title: "Go",
-      value: 20,
+      title: "Jenkins",
+      value: 80,
     },
   ],
   portfolioCategories: [
@@ -198,11 +198,19 @@ const database = {
     workingExperience: [
       {
         id: 1,
+        year: "2020 - Present",
+        position: "Software Engineer II",
+        company: "Spectrum Enterprise",
+        details:
+          "Working on the SEFA (Spectrum Enterprise Fulfillment Automation) Circuit Design team building the new platform that apps are built on for order and fulfillment.",
+      },
+      {
+        id: 2,
         year: "2014 - Present",
-        position: "Software Developer/Marketing Manager",
+        position: "Software Developer",
         company: "Education Consulting Associates (ECA)",
         details:
-          "Design and develop ADA compliant, high converting WordPress and HTML landing pages, HTML email marketing campaigns, Adobe Illustrator brochures for courses. Lead a team of 30 in the Philippines in various socail media strategies and ensure all communications are compliant with US education guidelines.",
+          "Design and develop ADA compliant, high converting WordPress and HTML landing pages, HTML email marketing campaigns. Build out the billing/invoicing automation software which tracks student progression through their course and invoices each school independently with custom generated PDF’s. Creating the REST APIin Go to be used and scaled for other schools to use and integrate their data into.",
       },
     ],
     educationExperience: [
